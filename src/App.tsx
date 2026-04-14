@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { runAlembixStage } from '@/lib/gemini';
-import { Toaster } from '@/components/ui/sonner';
+import { Toaster } from '@/components/ui/sonner-toaster';
 import { toast } from 'sonner';
 import { Beaker, Play, RotateCcw, Sparkles } from 'lucide-react';
 
