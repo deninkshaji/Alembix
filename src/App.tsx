@@ -4,11 +4,11 @@ import { UploadZone } from '@/components/UploadZone';
 import { StageTracker } from '@/components/StageTracker';
 import { OutputDisplay } from '@/components/OutputDisplay';
 import { DomainSelector } from '@/components/DomainSelector';
-import { Button } from '@/components/ui/button.tsx';
-import { Input } from '@/components/ui/input.tsx';
-import { Label } from '@/components/ui/label.tsx';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { runAlembixStage } from '@/lib/gemini';
-import { SonnerToaster } from '@/components/ui/sonner-toaster.tsx';
+import { SonnerToaster } from '@/components/ui/sonner-toaster';
 import { toast } from 'sonner';
 import { Beaker, Play, RotateCcw, Sparkles } from 'lucide-react';
 

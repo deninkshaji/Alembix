@@ -1,6 +1,6 @@
 import { CheckCircle2, Circle, Loader2 } from 'lucide-react';
 import { STAGES, StageResult } from '@/types';
-import { Progress } from '@/components/ui/progress.tsx';
+import { Progress } from '@/components/ui/progress';
 
 interface StageTrackerProps {
   results: StageResult[];
