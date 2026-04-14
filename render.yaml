@@ -1,0 +1,14 @@
+services:
+  - type: static
+    name: alembix
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: GEMINI_API_KEY
+        description: "Your Google Gemini API Key from AI Studio"
+        sync: false
+    routes:
+      - type: rewrite
+        src: /*
+        dest: /index.html

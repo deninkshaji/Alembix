@@ -1,0 +1,6 @@
+{
+  "name": "Alembix",
+  "description": "A structured literature survey tool for researchers. Upload 5-6 research papers and run an 11-stage prompt chain to produce a complete intellectual map of your literature.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

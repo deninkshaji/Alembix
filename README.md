@@ -1,11 +1,32 @@
-<div align="center">
+# Alembix — Deployment Guide
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+This repository is configured for easy deployment to **Render.com**.
 
-  <h1>Built with AI Studio</h2>
+## Deployment Steps
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1.  **Push to GitHub**: Push your code to a GitHub repository.
+2.  **Connect to Render**:
+    - Log in to [Render.com](https://render.com).
+    - Click **New +** and select **Blueprint**.
+    - Connect your GitHub repository.
+    - Render will automatically detect the `render.yaml` file.
+3.  **Configure Environment Variables**:
+    - During setup, Render will ask for the `GEMINI_API_KEY`.
+    - Provide your API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+4.  **Deploy**: Click **Apply**. Render will build and host your site.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Manual Configuration (if not using Blueprint)
 
-</div>
+If you prefer to set it up manually as a **Static Site**:
+- **Build Command**: `npm install && npm run build`
+- **Publish Directory**: `dist`
+- **Environment Variables**: Add `GEMINI_API_KEY` in the Render Dashboard under the "Environment" tab.
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+Ensure you have a `.env` file with your `GEMINI_API_KEY`.
