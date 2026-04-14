@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { runAlembixStage } from '@/lib/gemini';
-import { Toaster } from '@/components/ui/sonner-toaster';
+import { SonnerToaster } from '@/components/ui/sonner-toaster';
 import { toast } from 'sonner';
 import { Beaker, Play, RotateCcw, Sparkles } from 'lucide-react';
 
@@ -85,7 +85,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans selection:bg-primary/30">
-      <Toaster position="top-right" theme="dark" />
+      <SonnerToaster />
       
       {/* Header */}
       <header className="h-16 border-b border-border bg-card/50 backdrop-blur-md flex items-center px-6 justify-between sticky top-0 z-50">
