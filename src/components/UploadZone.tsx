@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Upload, FileText, X, Loader2 } from 'lucide-react';
-import { ResearchPaper } from '../types';
-import { extractTextFromPdf } from '../lib/pdf';
-import { Button } from './ui/button';
-import { Card } from './ui/card';
+import { ResearchPaper } from '@/types';
+import { extractTextFromPdf } from '@/lib/pdf';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 import { toast } from 'sonner';
 
 interface UploadZoneProps {

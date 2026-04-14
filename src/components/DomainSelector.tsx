@@ -1,7 +1,7 @@
-import { DomainTemplate } from "../types";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+import { DomainTemplate } from "@/types";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 interface DomainSelectorProps {
   domain: DomainTemplate;

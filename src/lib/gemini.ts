@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { DomainTemplate, ResearchPaper } from "../types";
+import { DomainTemplate, ResearchPaper } from "@/types";
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
 
